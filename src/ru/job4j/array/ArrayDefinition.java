@@ -16,5 +16,12 @@ public class ArrayDefinition {
         for (int i = 0; i < names.length; i++) {
             System.out.println(names[i]);
         }
+        int [] countResult = new int [5];
+        for (int i = 0; i < names.length; i++) {
+            countResult[i] = i * 2 + 3;
+        }
+        for (int i = 0; i < countResult.length; i++) {
+            System.out.println(countResult[i]);
+        }
     }
 }
