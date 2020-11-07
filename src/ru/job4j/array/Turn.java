@@ -5,6 +5,7 @@ public class Turn {
         int firstValue = array[0];
         array[0] = array[array.length - 1];
         array[array.length - 1] = firstValue;
+
         for (int i = 1; i < array.length / 2; i++) {
             int flowValue = array[i];
             int reversTouch = array[array.length - 1 - i];
