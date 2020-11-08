@@ -8,9 +8,8 @@ public class Turn {
 
         for (int i = 1; i < array.length / 2; i++) {
             int flowValue = array[i];
-            int reversTouch = array[array.length - 1 - i];
             array[array.length - i - 1] = flowValue;
-            array[i] = reversTouch;
+            array[i] = array[array.length - 1 - i];
         }
         return array;
     }
