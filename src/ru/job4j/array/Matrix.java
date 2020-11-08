@@ -10,11 +10,4 @@ public class Matrix {
         }
         return table;
     }
-
-    public static void main(String[] args) {
-        int [][] table = multiple(9);
-        for (int i = 0; i < table.length; i++) {
-            System.out.println(table[3][i]);
-        }
-    }
 }
