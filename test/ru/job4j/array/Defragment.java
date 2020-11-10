@@ -6,10 +6,8 @@ public class Defragment {
             if (array[index] == null) {
                 for (int y = index; y < array.length; y++) {
                     if (array[y] != null) {
-                        String source = array[index];
-                        String dest = array[y];
-                        array[index] = dest;
-                        array[y] = source;
+                        array[index] = array[y];
+                        array[y] = null;
                         break;
                     }
                 }
