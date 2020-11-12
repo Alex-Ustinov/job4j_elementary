@@ -9,7 +9,6 @@ public class AlgoArray {
                 array[i] = temp;
             }
         }
-
         for (int y = 0; y < array.length; y++) {
             System.out.println(array[y]);
         }
