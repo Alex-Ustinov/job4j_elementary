@@ -7,16 +7,13 @@ public class Max {
     }
 
     public static int max(int left, int right, int middle) {
-        int leftToRight = max(left, right);
-        int result = leftToRight > middle ? leftToRight : middle;
-        return result;
+        return return max(max(left, right), middle);
     }
 
     public static int max(int left, int right, int middle, int last) {
-        int leftToRightToMiddle = max(left, right, middle);
-        int result = leftToRightToMiddle > last ? leftToRightToMiddle : last;
-        return result;
+        return max(max(max(left, right), middle), last);
     }
+
 
     public static void main(String[] args) {
        int rsl = max(42, 5);
